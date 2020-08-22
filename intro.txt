@@ -5,36 +5,37 @@
 
 Concepts
 
+types of data. (primitive, non primitive), let , var, const 
+loosely typed
+operators
 objects
 functions and paramters
-this
-data types. let , const
-NaN, undefined, type conversion
-loosely typed language
-scope
 callbacks
+scope
+this
+closure
+call, apply, bind
 anonymous functions
 IIFE
-hoisting
-classes
-higher order functions
-promise
-event loop
-closure
-currying
-async-await
-generators
 prototypes - methods
 prototype Inheritance
-event bubbling
-call, apply, bind
+hoisting
+classes
+array - reduce, splice, slice
+promise
+async-await
+try catch
+currying
+higher order functions
 sets and maps
+generators
+events
+event loop
+event bubbling
 garbage collections
-Array functions - reduce, splice, slice
 file import const, default import
 js modules
 different versions (es5, es6)
 Browser compatibility and transpilation
-
 
 
