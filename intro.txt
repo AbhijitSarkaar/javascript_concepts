@@ -1,0 +1,40 @@
+1. Why Javascript. Why it was invented? What problems it's solving?
+2. Is Javascript a scripting language or programming language? Difference between them.
+3. How does javascript run? how does node.js help here?
+4. Different versions of javascript.
+
+Concepts
+
+objects
+functions and paramters
+this
+data types. let , const
+NaN, undefined, type conversion
+loosely typed language
+scope
+callbacks
+anonymous functions
+IIFE
+hoisting
+classes
+higher order functions
+promise
+event loop
+closure
+currying
+async-await
+generators
+prototypes - methods
+prototype Inheritance
+event bubbling
+call, apply, bind
+sets and maps
+garbage collections
+Array functions - reduce, splice, slice
+file import const, default import
+js modules
+different versions (es5, es6)
+Browser compatibility and transpilation
+
+
+
