@@ -6,7 +6,7 @@
 Concepts
 
 types of data. (primitive, non primitive), let , var, const 
-loosely typed
+loosely typed (Mention of types is not needed)
 operators
 objects
 functions and paramters
