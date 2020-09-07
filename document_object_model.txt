@@ -1,5 +1,5 @@
 Q. what is dom
-A. the browser downloads the html with any references javascript and images, and converts the html into an object (tree format). each element is represented as a node (property of the object?) 
+A. the browser downloads the html with any references javascript and images, and converts the html into an object (tree format) by using a html parser. each element is represented as a node (property of the object?) 
 
 dom is an api (interfact) that is exposed to the languages. dom api contains the document objects with each object represented as the nodes
 the programming language can use the dom api to make required changes to the web page (the document/html source seen in browser window)
@@ -8,14 +8,25 @@ dom is language agnostic. It does not depend on which language is using it to ch
 
 Q. what is document in dom? Is it a interface
 A. It has two meanings. First document represents the actual html source that the server serves. 
-   Second, the document object, which can have properties (body (returns the body)) and methods (getElementById). It's the object oriented version of the html source
+   Second, the document object of window global object in browsers, which can have properties (body (returns the body)) and methods (getElementById). It's the object oriented version of the html source
+
+Q. How is dom created?
+A. Using a html parser which converts the html to object
 
 Q. what is dom manipulation
 A. It's editing the elements of the document
 
 Q. what is virtual dom 
+A. It's a javascript object which represents the dom. https://bitsofco.de/understanding-the-virtual-dom/
+https://medium.com/@happymishra66/virtual-dom-in-reactjs-43a3fdb1d130 (explains why updating dom is slow)
 
-
+Q. What is shadow dom
+A. It's the smaller dom parts which encapsulates certain dom subtree and it's styles and represents only that's necessary. E.g a custom html tag <video />
+The global styles using same classname can't change the shadow element's styles
+https://stackoverflow.com/questions/47625017/override-styles-in-a-shadow-root-element
+https://www.blog.duomly.com/what-is-the-difference-between-shadow-dom-and-virtual-dom/
+https://www.stackchief.com/blog/The%20Shadow%20DOM%3A%20A%20Quick%20Explanation
+https://stackoverflow.com/questions/36012239/is-shadow-dom-fast-like-virtual-dom-in-react-js#:~:text=Shadow%20DOM%3A%20Part%20of%20the,height%3D%22150%22%20%2F%3E
 
 Q. what is rendering
-Q. why does a component re render
+A. When new element is detected in the dom, it gets included into the document object
