@@ -1,0 +1,21 @@
+Q. what is dom
+A. the browser downloads the html with any references javascript and images, and converts the html into an object (tree format). each element is represented as a node (property of the object?) 
+
+dom is an api (interfact) that is exposed to the languages. dom api contains the document objects with each object represented as the nodes
+the programming language can use the dom api to make required changes to the web page (the document/html source seen in browser window)
+
+dom is language agnostic. It does not depend on which language is using it to change the web page
+
+Q. what is document in dom? Is it a interface
+A. It has two meanings. First document represents the actual html source that the server serves. 
+   Second, the document object, which can have properties (body (returns the body)) and methods (getElementById). It's the object oriented version of the html source
+
+Q. what is dom manipulation
+A. It's editing the elements of the document
+
+Q. what is virtual dom 
+
+
+
+Q. what is rendering
+Q. why does a component re render
