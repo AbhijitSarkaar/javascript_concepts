@@ -1,0 +1,28 @@
+Resources
+1. https://medium.com/jspoint/how-javascript-works-in-browser-and-node-ab7d0d09ac2f
+
+Q. Is Javascript a scripting language or programming language?
+A. It's both scripting and programming language because all scripting languages are programming languages
+
+Q. Difference between a scripting language or programming language
+A. scripting languages are interpreted and programming languages are compiled
+
+Q. Difference between compilation and interpretation of languages
+A. Compilation translates the entire source code into another form which the machine understands. 
+    It points all the errors in the source code at once after translating. Once it (the executable code) is error free, it's executed by the machine
+
+    interpretation takes a program, reads it line by line. For every line, it translates the line into machine understandable code
+    and executes it straight away. If a error is encountered then the next line is not executed
+    
+Q. Engine names of browsers
+A. V8 - Chrome, Spidermonkey - Firefox, Chakra - IE
+
+Q. What is a javscript engine
+A. It's a computer program that executes js code
+
+Q. Bytecode and Machine code
+A. Byte code is a intermediate form between source code and machine code. It needs a interpreter to get converted to the machine code (binary) which the cpu understand
+
+Q. Just in time compilers
+A. The main goal is to improve the performance
+Just in time compilers are used to converting the source code/bytecode to machine code on the fly
