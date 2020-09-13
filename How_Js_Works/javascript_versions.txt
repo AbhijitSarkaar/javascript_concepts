@@ -1,0 +1,20 @@
+Resources:
+1. For ECMA (European Computer Manufacturer’s Association): https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/
+
+Q. What is javascript?
+A. It's a programming language that is being used for creating dynamic web pages. 
+Javascript can be used in client (browser) and server both (using node.js)
+
+Q. what is ECMAScript (aka ECMA 262)
+A. It's a standard specification (not a programming language as there is no compiler out there that would run ECMAScript) aka ECMA-262 (standard for ECMA). The standard is created by ECMA International.
+It can be referenced to create a scripting language (E.g Javascript, ActionScript, JScript)
+
+Q. When a new version of ECMAScript comes out, how it's integrated to the javascript? Role of Javascript engines and javascript creators.
+A. It's done by the javascript engines. https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript
+
+Q. If ECMAScript is a standard, who implements the extra features in javascript? (Is the Javascript creators or the javascript engine creators)
+A. Javascript creators and the javascript engine creators are same people. And The features are added by the devs writing the engines
+
+Q. Different versions of javascript
+A. Latest version of js is 1.8.5 release in 2010.
+Now JS versions are mentioned using ECMA. Latest is ECMA2015 (ES6). previous one is ECMA2009 (ES5)
