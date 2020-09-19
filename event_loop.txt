@@ -1,0 +1,58 @@
+Resource
+1. https://medium.com/javascript-in-plain-english/understanding-javascript-heap-stack-event-loops-and-callback-queue-6fdec3cfe32e
+2. https://dev.to/steelvoltage/if-javascript-is-single-threaded-how-is-it-asynchronous-56gd
+3. https://blog.bitsrc.io/understanding-asynchronous-javascript-the-event-loop-74cd408419ff#:~:text=JavaScript%20is%20a%20single%2Dthreaded,can%20happen%20at%20a%20time.&text=Using%20asynchronous%20JavaScript%20(such%20as,without%20blocking%20the%20main%20thread.
+
+Concepts
+
+1. callback: https://www.freecodecamp.org/news/javascript-callback-functions-what-are-callbacks-in-js-and-how-to-use-them/
+2. events
+    https://javascript.info/introduction-browser-events
+    https://flaviocopes.com/javascript-events/
+    1. events are signal which happens after some action (e.g: mouse click)
+    2. events are not part of the core JavaScript. they are part of the browser apis
+    3. event handler is a function which runs after a event occurs
+    4. Event object is passed to event handler when a event happens on a dom element. The event object contains different properties of the dom element on which the event occurs
+3. event delegation (propagation, bubbling, capturing, stopPropagation(), preventDefault(), target, currentTarget)
+
+    (event propagation)
+    https://javascript.info/bubbling-and-capturing
+
+    (event target and currentTarget)
+    https://dillionmegida.com/p/understanding-event-target-and-use-cases/
+    http://www.qc4blog.com/?p=650
+
+    (event delegation)
+    https://javascript.info/event-delegation
+    https://medium.com/@bretdoucette/part-4-what-is-event-delegation-in-javascript-f5c8c0de2983
+    https://dmitripavlutin.com/javascript-event-delegation/ (how event delegation helps)
+
+
+    1. event target is the place from which the event is originated (clicked for 'click' event. If a event happens on a stack of elements then target represents the bottommost element). 
+    currentTarget is the element which listens to the event (which can be same as target, or an element above the hierarchy)
+    2. event delegation is a pattern where a set of elements are represented by a common ancestor
+    3. e.stopPropagation() stops the event bubbling up the elements stack
+    4. e.preventDefault() is about stopping a default behaviour of an event by the browser (e.g clicking on a checkbox, form submit refresh)
+    5. event propagation ihas three phases. capturing (top-down), target phase, bubbling (bottom-up),
+    first the event happens on the top level elements all the way to the innermost element, after that the event handler is executed on the target, later the bubbling happens
+    6. event bubbling is the default way javascript event propagation happen. for capturing, need to change the boolean flag in addEventListener,
+    main thing to note here is events are not listened two times for both capture and bubbling. They are either listened to in capturing mode (by setting boolean flag),
+    or in bubbling mode which is the default behaviour
+
+asynchronous js
+web apis
+event loops
+thread pooling
+callback queue
+messsage queue
+events
+
+Current Concept
+
+
+
+
+
+
+
+
