@@ -38,16 +38,32 @@ Concepts
     6. event bubbling is the default way javascript event propagation happen. for capturing, need to change the boolean flag in addEventListener,
     main thing to note here is events are not listened two times for both capture and bubbling. They are either listened to in capturing mode (by setting boolean flag),
     or in bubbling mode which is the default behaviour
+4. asynchronous js
+    1. It's needed so that if a operation is needed to be executed and it takes more time to execute (for waiting for action to complete), then using asynchronous js, this block
+    of code can be executed later once the operation is completed
+    https://www.pluralsight.com/guides/introduction-to-asynchronous-javascript
 
-asynchronous js
-web apis
-event loops
+5. single threaded vs asynchronous js
+    1. Each JS engine contains a memory heap, a call stack, an event loop, a callback queue and a WebAPI with HTTP requests, timers, events,
+    2. JavaScript language is single-threaded and the asynchronous behaviour is not part of the JavaScript language itself, 
+    rather they are built on top of the core JavaScript language in the browser (or the programming environment) and accessed through the browser APIs
+    https://codesthq.com/asynchronous-and-single-threaded-javascript-meet-the-event-loop/#:~:text=Synchronous%20with%20multiple%20threads%20%3A%20Tasks,single%20task%20can%20be%20executed.
+
+
+6. browser web apis
+    1. They are implemented by browser on top of javascript. Can be used for manipulating the web page (dom api) or fetching data from server (fetch api)
+
 thread pooling
 callback queue
 messsage queue
-events
 
 Current Concept
+event loops
+
+
+
+
+
 
 
 
