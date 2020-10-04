@@ -25,10 +25,14 @@ current
 
     1. then() method takes up to two arguments: callback functions for the success and failure. each call back function takes corresponding
     fullfilled value or the rejected value
-    2. then() returns a promise. 
+    2. then() returns a promise (resolved/rejected). 
     When a value is simply returned from within a then handler, it will effectively return Promise.resolve(<value returned by whichever handler was called>).
     3. promise chaining is achieved by returning promise from then() method. the subsequent then methods receive the promise value from previous then methods
     the subsequent then() methods wait for the promise to get resolved or rejected
+    4. catch is used for catching the rejected promise
+    5. finally is called when the promise is settled (resolved or rejected)
+    6. then() returns rejected promise in two cases, if it throws an error, or if it returns Promise.reject()
+    if then returns a rejected promise, the subsequent then method's second (reject) callback function will be called
 
 */
 
@@ -52,6 +56,7 @@ Second
 2Foobarbaz 
 */
 
+/*
 console.log('First');
 Promise.resolve('Foo')
 	.then((value) => {
@@ -76,3 +81,25 @@ Promise.resolve('Foo')
 		console.log('3' + value);
 	});
 console.log('Second');
+
+*/
+
+//Invoking reject callback for subsequent then methods. Happens when previous then returns a rejected promise
+
+Promise.resolve()
+	.then(() => {
+		// Makes .then() return a rejected promise
+		throw new Error('Oh no!');
+		// return new Promise((resolve, reject) => {
+		// 	reject('Oh no!');
+		// });
+	})
+	.then(
+		() => {
+			console.log('Not called.');
+		},
+		(error) => {
+			console.error('onRejected function called: ' + error.message); // in case of Error object
+			// console.error('onRejected function called: ' + error); //in case of rejected promise
+		}
+	);
