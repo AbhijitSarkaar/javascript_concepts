@@ -10,16 +10,9 @@ Concepts
     2. promise can be in three states, pending, fullfilled, rejected
     3. resolve method is called when the async operation was successfull
     4. reject method is called when the async operation failed
-    5. new Promise takes two callback functions resolve and reject
+    5. new Promise takes two callback functions resolve and reject. any one is called based on previous returned promise's state
 
-2. promise apis
-3. async await
-4. fetch implementation   
-5. error handling
-6. promisfication  
-
-current
-2. promise chain (then, catch, finally)
+    2. promise chain (then, catch, finally)
     https://javascript.info/promise-chaining
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
 
@@ -29,10 +22,19 @@ current
     When a value is simply returned from within a then handler, it will effectively return Promise.resolve(<value returned by whichever handler was called>).
     3. promise chaining is achieved by returning promise from then() method. the subsequent then methods receive the promise value from previous then methods
     the subsequent then() methods wait for the promise to get resolved or rejected
-    4. catch is used for catching the rejected promise
+    4. catch is used for catching the rejected promise. catch returns a promise which can be chained
     5. finally is called when the promise is settled (resolved or rejected)
     6. then() returns rejected promise in two cases, if it throws an error, or if it returns Promise.reject()
     if then returns a rejected promise, the subsequent then method's second (reject) callback function will be called
+
+4. async await
+5. fetch implementation   
+7. promisfication  
+
+current
+3. promise apis
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
 
 */
 
@@ -85,7 +87,7 @@ console.log('Second');
 */
 
 //Invoking reject callback for subsequent then methods. Happens when previous then returns a rejected promise
-
+/*
 Promise.resolve()
 	.then(() => {
 		// Makes .then() return a rejected promise
@@ -103,3 +105,47 @@ Promise.resolve()
 			// console.error('onRejected function called: ' + error); //in case of rejected promise
 		}
 	);
+
+*/
+
+//Promise APIs
+
+//1. Promise.all()
+//if any one of the promise rejects, Promise.all() returns a promise using the first promise reject value independent of the status of the other fulfilled promises
+
+// let allPromises = Promise.all([Promise.resolve('1'), Promise.reject('2')]);
+// let allPromises = Promise.all([Promise.resolve('1'), Promise.resolve('2')]);
+
+// setTimeout(() => {
+// 	console.log(allPromises);
+// }, 1000);
+
+// console.log(allPromises);
+
+//2. Promise.allSettled()
+//returns the settled (resolve/reject) value of all the promises
+
+// let allPromises = Promise.allSettled([Promise.resolve('1'), Promise.reject('2')]);
+
+// setTimeout(() => {
+// 	console.log(allPromises);
+// }, 1000);
+
+// console.log(allPromises);
+
+//3. Promise.any() (experimental method, may not be supported in all platforms)
+//returns any one fulfilled promises
+
+//4. Promise.race()
+//returns the settled (resolve/reject) value of first promise in the iterable
+
+// let allPromises = Promise.race([Promise.reject('2'), Promise.resolve('1')]);
+
+// setTimeout(() => {
+// 	console.log(allPromises);
+// }, 1000);
+
+// console.log(allPromises);
+
+//5. Promise.resolve(value)
+//6. Promise.reject(reason)
