@@ -1,0 +1,11 @@
+https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0 
+https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
+
+1. execution context is same as call stack
+2. execution context is of three types (global, functional, eval function)
+3. execution context is built in two phases (creation and execution phase)
+4. in creation phase, every execution context provides scope, scope chain, hoisting and this keyword value, which points to an object
+5. execution context is an abstract idea about having infomation about the environment in which current code is being executed
+6. the global execution context is created before any code starts executing
+7. every time a function is encountered, a execution context is created
+8. determining scope helps in figuring out which variables and functions the context has access to
