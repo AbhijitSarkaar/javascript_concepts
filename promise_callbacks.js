@@ -35,8 +35,11 @@ Concepts
     https://dev.to/gafi/7-reasons-to-always-use-async-await-over-plain-promises-tutorial-4ej9?ref=hackernoon.com
     https://www.freecodecamp.org/news/async-await-and-promises/
 
-current
+5. try catch
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
+	https://javascript.info/try-catch
 
+	1. it's used for checking if a code segment has errors
 
 */
 
