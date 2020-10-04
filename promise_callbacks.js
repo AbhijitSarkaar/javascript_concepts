@@ -10,7 +10,6 @@ Concepts
     2. promise can be in three states, pending, fullfilled, rejected
     3. resolve method is called when the async operation was successfull
     4. reject method is called when the async operation failed
-    5. new Promise takes two callback functions resolve and reject. any one is called based on previous returned promise's state
 
     2. promise chain (then, catch, finally)
     https://javascript.info/promise-chaining
@@ -26,14 +25,17 @@ Concepts
     5. finally is called when the promise is settled (resolved or rejected)
     6. then() returns rejected promise in two cases, if it throws an error, or if it returns Promise.reject()
     if then returns a rejected promise, the subsequent then method's second (reject) callback function will be called
+    7. then takes two callback functions fulfillled and unFulfillled. any one is called based on previous returned promise's state
+
+3. promise apis
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
 4. async await
-5. fetch implementation   
-7. promisfication  
+    https://javascript.info/async-await
+    https://dev.to/gafi/7-reasons-to-always-use-async-await-over-plain-promises-tutorial-4ej9?ref=hackernoon.com
+    https://www.freecodecamp.org/news/async-await-and-promises/
 
 current
-3. promise apis
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
 
 */
