@@ -46,8 +46,8 @@ cars['hexa'] = 'suv'; // not allowed
 
 try {
 	//following statements add and delete properties from cars object which is sealed. hence not possible and throws error in strict mode
-	delete cars.hexa;
-	cars['i10'] = 'mini';
+	// delete cars.hexa;
+	// cars['i10'] = 'mini';
 } catch (err) {
 	// console.log(err); //throws an error in strict mode
 }
@@ -58,10 +58,23 @@ try {
 //it's an Array instance containing all the REMAINING arguments passed to the function
 //rest parameters are introduced because earlier arguments object needed to be converted into normal array before iterating through the parameters
 
-function foo(a, b, ...rest) {
-	console.log(a);
-	console.log(b);
-	console.log(rest);
-}
+const foo = (a, b, ...rest) => {
+	// console.log(a);
+	// console.log(b);
+	// console.log(rest);
+};
 
 foo('a', 'b', 'c', 'd', 'e');
+
+//arguments object is an array like structure, contains the value passed to the function
+//arguments object only used for non arrow functions. it's a local variable available to the calling function
+//it can be converted into real array using Array.from() or spread operator
+//for arrow functions, rest parameters are preferred over arguments object
+
+function foo1() {
+	console.log(arguments);
+	console.log(arguments.length);
+	console.log([...arguments]);
+}
+
+foo1('a', 'b', 'c');
