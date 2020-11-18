@@ -72,9 +72,48 @@ foo('a', 'b', 'c', 'd', 'e');
 //for arrow functions, rest parameters are preferred over arguments object
 
 function foo1() {
-	console.log(arguments);
-	console.log(arguments.length);
-	console.log([...arguments]);
+	// console.log(arguments);
+	// console.log(arguments.length);
+	// console.log([...arguments]);
 }
 
 foo1('a', 'b', 'c');
+
+//spread operator: it's use for expanding the values present in iterable (array, strings etc)
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+//spread operator is used inside function call, array literal [] and object literal {} where a expandable list of items is expected
+//Literal is a fundamental value associated with some expression in javascript.
+//Note: array and string can be spread inside object literal but object can not be spread inside a array iteral
+
+let list1 = [1, 2, 3, 4];
+let list2 = [5, 6, 7, 8];
+
+console.log([...list1, ...list2]); //output: [1,2,3,4,5,6,7,8]
+console.log([...list1, ...list2].length); //output: 8
+list1.push(...list2);
+console.log(list1); //output: [1,2,3,4,5,6,7,8]
+
+str = 'a/b/c/d/e';
+function sum(a, b) {
+	return a + b;
+}
+console.log(sum(...str)); //output: "a/"
+console.log({ ...str }); //string expanded into a object literal
+// {
+// 	 '0': 'a',
+//   '1': '/',
+//   '2': 'b',
+//   '3': '/',
+//   '4': 'c',
+//   '5': '/',
+//   '6': 'd',
+//   '7': '/',
+//   '8': 'e'
+// }
+
+let list = [1, 2, 3, 4];
+console.log({ ...list }); //array expanded into a object literal: { '0': 1, '1': 2, '2': 3, '3': 4 }
+
+//Important
+let obj = { a: 1, b: 2 };
+// console.log([...obj]); //throws error: obj is not iterable
