@@ -117,3 +117,17 @@ console.log({ ...list }); //array expanded into a object literal: { '0': 1, '1':
 //Important
 let obj = { a: 1, b: 2 };
 // console.log([...obj]); //throws error: obj is not iterable
+
+//Destructing assignment
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+//template literals
+
+//multi line strings which is not possible using single and double quotes
+str = `asdfasdwwwwww
+asdfasdf`;
+console.log(str);
+
+//Inserting numbers into string. string interpolation
+str = `Two: ${2}`;
+console.log(str);
