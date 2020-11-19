@@ -1,13 +1,15 @@
 'use strict';
 
-//1. Strings are immutable
+//1
+//Strings are immutable
 let str = 'Bob';
 // str[0] = 'J';
 // console.log(str);
 str = 'Job';
 // console.log(str); //however assigning str to diff string works
 
-//2. Array push and pop from front
+//2
+//Array push and pop from front
 let arr = [5, 2, 3, 4];
 
 arr.shift();
@@ -15,7 +17,8 @@ arr.shift();
 arr.unshift(1);
 // console.log(arr);
 
-//3. Object.freeze to make a object and it's properties truly immutable
+//3
+//Object.freeze to make a object and it's properties truly immutable
 //freeze return the same object that were passed to the function. it does not create a new copy.
 //it sets the writable and configurable attributes to false for the object
 
@@ -33,7 +36,8 @@ try {
 }
 // console.log(CONSTANTS['g']); //property unchanged
 
-//4. Object.seal to make a object's properties sealed. new properties can't be added and existing ones can't be deleted
+//4
+//Object.seal to make a object's properties sealed. new properties can't be added and existing ones can't be deleted
 
 const cars = {
 	hexa: 'Nice',
@@ -52,6 +56,7 @@ try {
 	// console.log(err); //throws an error in strict mode
 }
 
+//5
 //rest parameter of function: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 //it's a function's last parameter and is prefixed with an spread syntax ...
 //rest parameter can only be the last paramter
@@ -66,6 +71,7 @@ const foo = (a, b, ...rest) => {
 
 foo('a', 'b', 'c', 'd', 'e');
 
+//6
 //arguments object is an array like structure, contains the value passed to the function
 //arguments object only used for non arrow functions. it's a local variable available to the calling function
 //it can be converted into real array using Array.from() or spread operator
@@ -79,6 +85,7 @@ function foo1() {
 
 foo1('a', 'b', 'c');
 
+//7
 //spread operator: it's use for expanding the values present in iterable (array, strings etc)
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 //spread operator is used inside function call, array literal [] and object literal {} where a expandable list of items is expected
@@ -88,17 +95,17 @@ foo1('a', 'b', 'c');
 let list1 = [1, 2, 3, 4];
 let list2 = [5, 6, 7, 8];
 
-console.log([...list1, ...list2]); //output: [1,2,3,4,5,6,7,8]
-console.log([...list1, ...list2].length); //output: 8
+// console.log([...list1, ...list2]); //output: [1,2,3,4,5,6,7,8]
+// console.log([...list1, ...list2].length); //output: 8
 list1.push(...list2);
-console.log(list1); //output: [1,2,3,4,5,6,7,8]
+// console.log(list1); //output: [1,2,3,4,5,6,7,8]
 
 str = 'a/b/c/d/e';
 function sum(a, b) {
 	return a + b;
 }
-console.log(sum(...str)); //output: "a/"
-console.log({ ...str }); //string expanded into a object literal
+// console.log(sum(...str)); //output: "a/"
+// console.log({ ...str }); //string expanded into a object literal
 // {
 // 	 '0': 'a',
 //   '1': '/',
@@ -112,22 +119,29 @@ console.log({ ...str }); //string expanded into a object literal
 // }
 
 let list = [1, 2, 3, 4];
-console.log({ ...list }); //array expanded into a object literal: { '0': 1, '1': 2, '2': 3, '3': 4 }
+// console.log({ ...list }); //array expanded into a object literal: { '0': 1, '1': 2, '2': 3, '3': 4 }
 
 //Important
 let obj = { a: 1, b: 2 };
 // console.log([...obj]); //throws error: obj is not iterable
 
+//8
 //Destructing assignment
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 
+//9
 //template literals
-
 //multi line strings which is not possible using single and double quotes
+
 str = `asdfasdwwwwww
 asdfasdf`;
-console.log(str);
+// console.log(str);
 
 //Inserting numbers into string. string interpolation
+
 str = `Two: ${2}`;
-console.log(str);
+// console.log(str);
+
+//10
+//class
+//class.js
