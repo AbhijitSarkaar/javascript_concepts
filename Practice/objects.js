@@ -116,3 +116,6 @@ let peacock = new Bird();
 console.log(peacock.constructor);
 console.log(peacock.eat()); //uses the eat() method of Animal.prototype
 peacock.fly();
+
+//8
+//Mixins: used for adding same functionality to different unrelated objects by passing the object
