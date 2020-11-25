@@ -1,0 +1,26 @@
+object prototypes 
+
+__proto__
+constructor
+constructor.prototype, Object.prototype
+prototype inheritence
+prototype chain
+prototype and __proto__ difference
+modifying prototypes
+instanceof and isPrototypeOF difference
+
+https://stackoverflow.com/questions/650764/how-does-proto-differ-from-constructor-prototype
+https://javascript.info/prototype-inheritance
+https://stackoverflow.com/questions/9959727/proto-vs-prototype-in-javascript/33000791
+https://stackoverflow.com/questions/572897/how-does-javascript-prototype-work
+https://johnresig.com/apps/learn/#66
+
+Observations
+
+    1. the prototype of an object can be set to only one object
+    2. __proto__ property can be used to set the prototype of an object. the prototype can be a object or null (It's not advisable to use it (why?))
+    3. inheriting properties from another object forms a prototype chain
+    4. Object.create() can be used to create a object from another object and sets the object as a prototype of the to be created object
+    5. Object.prototype is a object(collection of methods and properties e.g valueOf) which is passed down to different objects.
+    6. prototype property always refers to an objecs
+    7. every function has a prototype
