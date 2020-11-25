@@ -119,3 +119,9 @@ peacock.fly();
 
 //8
 //Mixins: used for adding same functionality to different unrelated objects by passing the object
+
+//10
+//IIFE
+(function () {
+	console.log('IIFE Running!');
+})();
