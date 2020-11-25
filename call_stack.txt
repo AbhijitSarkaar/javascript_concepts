@@ -1,0 +1,10 @@
+The javascript engine contains the call stack and heaps
+
+Q. javascript call stack. Why it's used?
+A. The call stack is a data structure which tells where we are at present in the program. It's used for functions.
+It pushes a function into the stack when called and pops it off when done executing
+Each entry (function) in the call stack is called stack frame
+When js throws an error, it displays the current state of the call stack
+
+Q. javascript heaps. Why it's used?
+A. It's used for allocating memory to objects/variables. Part of RAM

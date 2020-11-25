@@ -1,0 +1,8 @@
+
+Q. What happens after cpu computes the program? 
+Q. Entire lifecycle of a javascript program. From it's starting to cpu to it's display in browser
+Q. Javascript is single threaded. How it's different than it's asynchronous property
+Q. Javascript call stack and heaps
+Q. Difference between javascript and typescript
+Q. Difference between functional and non functional language
+Q. Browser transpilation

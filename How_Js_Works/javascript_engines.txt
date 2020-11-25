@@ -20,6 +20,9 @@ A. V8 - Chrome, Spidermonkey - Firefox, Chakra - IE
 Q. What is a javscript engine
 A. It's a computer program that executes js code
 
+Q. What are the components of javascript engine?
+A. Call stack and heap
+
 Q. Bytecode and Machine code
 A. Byte code is a intermediate form between source code and machine code. It needs a interpreter to get converted to the machine code (binary) which the cpu understand
 

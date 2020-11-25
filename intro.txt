@@ -1,41 +1,34 @@
-1. Why Javascript. Why it was invented? What problems it's solving?
-2. Is Javascript a scripting language or programming language? Difference between them.
-3. How does javascript run? how does node.js help here?
-4. Different versions of javascript.
-
 Concepts
 
-types of data. (primitive, non primitive), let , var, const 
-loosely typed (Mention of types is not needed)
+document object model
+Javascript versions (ECMAScript, javascript engine, Browser compatibility and transpilation)
+loosely typed (Can assign any type of value to a variable. the types are not enforced by using data types)
+types of data (primitive, non primitive)
 operators
-objects
-functions and paramters
-callbacks
-scope
-this
-closure
-call, apply, bind
+let, var, const (use strict)
+call stack and heap 
+event loop (events (event.preventDefault()), event bubbling, single thread, asynchronous, web apis, callback queue) 
+promise (async-await, try catch)
+this (call, apply, bind)
+execution context (scope chain)
+scope, hoisting, closure
+
+ (Current) --> Objects(this, prototypes, methods, prototype Inheritance)
+
+functions and parameters (new, this, function as object, arguments object, first-class functions, higher order functions)
 anonymous functions
 IIFE
-prototypes - methods
-prototype Inheritance
-hoisting
-classes
+pure functions, side effects and state mutations
 array - reduce, splice, slice
-promise
-async-await
-try catch
 currying
-higher order functions
 sets and maps
 generators
-events
-event loop
-event bubbling
 garbage collections
 file import const, default import
 js modules
-different versions (es5, es6)
-Browser compatibility and transpilation
-
-
+context api
+polyfills
+classes
+design patterns
+how to run js from editor to browser
+destructure https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
