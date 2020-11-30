@@ -141,16 +141,3 @@ asdfasdf`;
 
 str = `Two: ${2}`;
 // console.log(str);
-
-//10
-//instanceof: used to check if a object is a instance of a given constructor
-//hasOwnProperty: used to check if a object has a property
-
-function House(numBedrooms) {
-	this.numBedrooms = numBedrooms;
-}
-
-// Only change code below this line
-let myHouse = new House(4);
-console.log(myHouse instanceof House);
-console.log(myHouse.hasOwnProperty('numBedrooms'));

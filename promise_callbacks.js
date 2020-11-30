@@ -11,7 +11,7 @@ Concepts
     3. resolve method is called when the async operation was successfull
     4. reject method is called when the async operation failed
 
-    2. promise chain (then, catch, finally)
+2. promise chain (then, catch, finally)
     https://javascript.info/promise-chaining
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
 

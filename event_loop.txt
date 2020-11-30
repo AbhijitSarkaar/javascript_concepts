@@ -2,6 +2,7 @@ Resource
 1. https://medium.com/javascript-in-plain-english/understanding-javascript-heap-stack-event-loops-and-callback-queue-6fdec3cfe32e
 2. https://dev.to/steelvoltage/if-javascript-is-single-threaded-how-is-it-asynchronous-56gd
 3. https://blog.bitsrc.io/understanding-asynchronous-javascript-the-event-loop-74cd408419ff#:~:text=JavaScript%20is%20a%20single%2Dthreaded,can%20happen%20at%20a%20time.&text=Using%20asynchronous%20JavaScript%20(such%20as,without%20blocking%20the%20main%20thread.
+4. https://www.youtube.com/watch?v=8aGhZQkoFbQ
 
 Concepts
 
