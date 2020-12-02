@@ -1,3 +1,5 @@
+//it does not mutate the original array
+
 let ages = [
 	{ name: 'Mark', age: 21 },
 	{ name: 'Jane', age: 21 },
@@ -28,3 +30,4 @@ let age2 = ages.reduce(callback, {});
 
 console.log(age1);
 console.log(age2);
+console.log(ages);
