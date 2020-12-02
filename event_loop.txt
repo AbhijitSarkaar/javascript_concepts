@@ -75,6 +75,7 @@ Concepts
     https://www.knowledgescoops.com/2019/07/event-loops-event-tables-event-queues.html
     https://medium.com/@Rahulx1/understanding-event-loop-call-stack-event-job-queue-in-javascript-63dcd2c71ecd
     https://cek.io/blog/2015/12/03/event-loop/
+    https://javascript.info/event-loop#macrotasks-and-microtasks
 
 
 

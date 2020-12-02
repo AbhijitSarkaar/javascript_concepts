@@ -12,23 +12,25 @@ promise (async-await, try catch)
 this (call, apply, bind)
 execution context (scope chain)
 scope, hoisting, closure
-
- (Current) --> Objects(this, prototypes, methods, prototype Inheritance)
-
-functions and parameters (new, this, function as object, arguments object, first-class functions, higher order functions)
-anonymous functions
-IIFE
+Objects(this, prototypes, methods, prototype Inheritance)
 pure functions, side effects and state mutations
+IIFE
 array - reduce, splice, slice
+anonymous functions
+js modules
+import const, default import
+classes
+functions and parameters (new, this, function as object, arguments object, first-class functions, higher order functions)
+
+ (Current) --> 
+
 currying
+throttle and debounce
 sets and maps
 generators
 garbage collections
-file import const, default import
-js modules
 context api
 polyfills
-classes
 design patterns
 how to run js from editor to browser
 destructure https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment

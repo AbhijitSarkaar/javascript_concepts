@@ -1,3 +1,5 @@
+//Polyfill of all the array methods are present in MDN
+
 //Map
 
 let nums = [1, 2, 3, 4, 5, 6];
@@ -31,3 +33,6 @@ res = nums.myFilter(function (num) {
 });
 
 console.log(nums, res);
+
+//reduce
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
