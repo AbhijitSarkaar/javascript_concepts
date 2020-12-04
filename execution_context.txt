@@ -9,3 +9,12 @@ https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
 6. the global execution context is created before any code starts executing
 7. every time a function is encountered, a execution context is created
 8. determining scope helps in figuring out which variables and functions the context has access to
+
+ExecutionContext = {
+  ThisBinding: <this value>,
+  VariableEnvironment: { ... },
+  LexicalEnvironment: { ... }
+}
+VariableEnvironment component is used for the initial storage for the variables, arguments and function declarations. 
+The var declared variables are initialized with the value of undefined.
+LexicalEnvironment is used for identifier resolution (key value mappings)

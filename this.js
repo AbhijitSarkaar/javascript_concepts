@@ -76,16 +76,15 @@ let jillsRoom = new Room('Jill', 'Blue');
 johnsRoom.paintRoom();
 jillsRoom.paintRoom();
 
-/*
-1. call() method to use different contexts
+//1. call() method to use different contexts
 
-function Soap (name) {
-    this.name = name
+function Soap(name) {
+	this.name = name;
 }
 
-let dove = new Soap('Dove')
+let dove = new Soap('Dove');
 
-let lux = new Soap('Lux')
+let lux = new Soap('Lux');
 
 const cleanTable = function () {
 	console.log('clearning table using', this.name);
@@ -95,5 +94,3 @@ const cleanTable = function () {
 
 cleanTable.call(dove);
 cleanTable.call(lux);
-
-*/
