@@ -75,13 +75,15 @@ A.
 Hierarchy:
                               EventTarget (The DOM Interface)
                                     |
-                                    |
-                                   Node (Represents the Nodes in the DOM)
-                                    |
-                                 ___|_____
-                                |         |
-                                |         |
-                             Element    Document
+                               _____|_____     
+                              |           |
+                              |           |
+                           Window        Node (Represents the Nodes in the DOM)
+                                          |
+                                       ___|_____
+                                      |         |
+                                      |         |
+                                   Element    Document
 
 EventTarget: It is the DOM class. Element, Document and Window class are the three most used classes which inherits from EventTarget
 
