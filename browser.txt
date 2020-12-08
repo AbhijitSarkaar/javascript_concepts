@@ -1,0 +1,45 @@
+1. how does the elements in the browser take it's position and how the whole rendering work together? when does the js gets integrated
+into the html?
+
+start: 2:20 PM
+
+https://codeburst.io/how-browsers-work-6350a4234634
+https://i.stack.imgur.com/vgtHG.png
+https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction
+https://medium.com/jspoint/how-the-browser-renders-a-web-page-dom-cssom-and-rendering-df10531c9969
+
+Browser consists of following components
+1. User interface
+2. Rendering engine (responsible for the whole rendering process on the browser)
+3. Data storage
+4. Network components
+5. JS engine
+6. UI Backend
+7. Browser engine (acts as a middle man between user interface and rendering engine)
+
+The Rendering process
+
+1. Browser's rendering engine downloads the html, css and js files
+2. After parsing the html is converted into DOM tree
+3. After parsing css it converts into CSSDOM
+4. CSSDOM is merged to DOM (attachment). This is called Render tree (DOM + CSSDOM). It consists of styled DOM nodes
+5. Render tree is laid out i.e the co-ordinates of the styled nodes on the screen are calculated (layout / reflow phase)
+6. Render tree is travered and each node is painted on the screen (using UI Backend)
+7. This whole process is done in chunks. 
+
+JavaScript integration aspect
+
+https://javascript.info/script-async-defer
+
+1. When the browser comes across a <script>, it pauses the DOM construction of the page and executes the script. 
+For external scripts, it downloads the script, executes it and then processes the rest of the page
+2. For defer, it downloads the script, asyncronously along with the page processing, But it executes the 
+scripts only after the processing is done. It also executes the scripts in order they are present in the 
+3. For async, it's independent of the processing of the page. It's downloaded and executed without blocking anything.
+It's usedul to implement a independent script
+4. inline script is the <script> tag with content in the same file
+5. JavaScript can manipulate both DOM and CSSDOM
+6. When a script is executed and it references a DOM node which is not yet constructed. then the reference to the dom node is null
+and the script changes will not be applied to the dom node. However after refresh again if the script is executed on that dom node 
+then the script will be able to find that node in the document object and will apply the changes 
+7. The JavaScript is integrated to the render tree and after that the render tree proceeds to the layout phase
