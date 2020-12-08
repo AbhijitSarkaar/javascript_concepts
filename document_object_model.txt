@@ -1,5 +1,6 @@
 Q. what is dom
-A. the browser downloads the html with any references javascript and images, and converts the html into an object (tree format) by using a html parser. each element is represented as a node (property of the object?) 
+A. the browser downloads the html with any references javascript and images, and converts the html into an object (tree format) by using a html parser. 
+each element is represented as a node (property of the object?) 
 
 dom is an api (interfact) that is exposed to the languages. dom api contains the document objects with each object represented as the nodes
 the programming language can use the dom api to make required changes to the web page (the document/html source seen in browser window)
@@ -7,8 +8,10 @@ the programming language can use the dom api to make required changes to the web
 dom is language agnostic. It does not depend on which language is using it to change the web page
 
 Q. what is document in dom? Is it a interface
-A. It has two meanings. First document represents the actual html source that the server serves. 
-   Second, the document object of window global object in browsers, which can have properties (body (returns the body)) and methods (getElementById). It's the object oriented version of the html source
+A. It has two meanings. 
+   First document represents the actual html source that the server serves. 
+   Second, the document object of window global object in browsers, which can have properties (body (returns the body)) and methods (getElementById). 
+   It's the object oriented version of the html source
 
 Q. How is dom created?
 A. Using a html parser which converts the html to object
@@ -32,3 +35,70 @@ Q. what is rendering
 A. When new element is detected in the dom, it gets included into the document object
 https://stackoverflow.com/questions/7515227/describe-the-page-rendering-process-in-a-browser
 https://stackoverflow.com/questions/5165310/what-is-the-complete-process-from-entering-a-url-to-the-browsers-address-bar-to
+
+Q. Elaborate more on document object of window object on browser
+A. 
+typeof window.document is an object
+window.document contains different properties such as 
+reload (reload the page)
+getElementById (getting elements by id), 
+body (body itself)
+contentType (text/html)
+URL (current page url)
+window.document.__proto__ is HTMLDocument
+window.document.body.__proto__ is HTMLBodyElement
+
+Q. Elaborate more on HTMLDocument and HTMLBodyElement
+A. 
+First read these two links
+https://developer.mozilla.org/en-US/docs/Web/API/Element
+https://developer.mozilla.org/en-US/docs/Web/API/Document
+
+HTMLDocument inherits from Document class.
+HTMLBodyElement inherits from Element class.
+
+Both Document and Element inherits from Node class. Node class inherits from EventTarget class
+There exists Window class which also inherits from EventTarget class
+
+Q. Elaborate on tabs in a browser. difference between window and tabs and how window object is used in tabs.
+A. 
+An window can contain mutiple tabs. When tabs are taken out of a window, then that tab becomes a separate window.
+Window class is used to represent the document used in that tab (window.document)
+the variable window is exposed to the javascript code
+each tab has it's own window object as the document loaded in separate tabs is different. and property defined in one tab
+in the window object's constructor is not accessible from another tab
+
+
+Q. Explain EventTarget, Node, Element, Document classes
+A.
+
+Hierarchy:
+                              EventTarget (The DOM Interface)
+                                    |
+                                    |
+                                   Node (Represents the Nodes in the DOM)
+                                    |
+                                 ___|_____
+                                |         |
+                                |         |
+                             Element    Document
+
+EventTarget: It is the DOM class. Element, Document and Window class are the three most used classes which inherits from EventTarget
+
+Node: It is the abstract base class for representing nodes in the dom tree. Element and Document classes is based on Node class. 
+There is no object which is Node class's instance. All the objects are usually instance of Element ot Document. 
+Node class contains some member functions such as appendChild(), removeChild() etc
+
+Element: It represents the objects that represents elements. For example a <div>, <p> tags. Element class has properties 
+such as className, innerText etc
+
+for a <div> element the hierarchy is:
+let div = window.document.getElementsByClassName("question-search-metrics")[0]
+div.__proto__ => HTMLDivElement => HTMLElement => Element
+
+Document: It is the interface which serves as a entry point to the web page's content. It has document object as it's instance
+document object contains properties such as body, title, head, URL etc. It represents the content present in the current tab
+
+
+
+
