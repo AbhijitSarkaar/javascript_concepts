@@ -11,5 +11,22 @@
        (Applicable for let and const. It's the time where variable exist because of hoisting, but can't access them untill they are defined (ReferenceError))
     4. Function hoisting (function declarations are hoisted, function expressions are not hoisted)
     5. hoisting is done for each scope
-    6. function declaration such as function a() {} is hoisted as var a = function () {}
+    6. function declaration such as function a() {} is hoisted as var a = function () {}. declarations load before any code can run
+    and function expression load when the interpreter reach that line
 */
+
+//Function declaration
+
+foo1(); //hoisted
+
+function foo1() {
+	console.log('Function declaration');
+}
+
+//Function expression
+
+foo2(); //typeError. not hoisted
+
+var foo2 = function () {
+	console.log('Function expression');
+};
