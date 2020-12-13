@@ -2,6 +2,7 @@
 into the html?
 
 start: 2:20 PM
+end: 6:14 PM
 
 https://codeburst.io/how-browsers-work-6350a4234634
 https://i.stack.imgur.com/vgtHG.png
@@ -34,12 +35,12 @@ https://javascript.info/script-async-defer
 1. When the browser comes across a <script>, it pauses the DOM construction of the page and executes the script. 
 For external scripts, it downloads the script, executes it and then processes the rest of the page
 2. For defer, it downloads the script, asyncronously along with the page processing, But it executes the 
-scripts only after the processing is done. It also executes the scripts in order they are present in the 
+scripts only after the processing is done. It also executes the scripts in order they are present in the html
 3. For async, it's independent of the processing of the page. It's downloaded and executed without blocking anything.
-It's usedul to implement a independent script
+It's useful to implement a independent script
 4. inline script is the <script> tag with content in the same file
 5. JavaScript can manipulate both DOM and CSSDOM
 6. When a script is executed and it references a DOM node which is not yet constructed. then the reference to the dom node is null
-and the script changes will not be applied to the dom node. However after refresh again if the script is executed on that dom node 
+and the script changes will not be applied to the dom node. However again if the script is executed on that dom node 
 then the script will be able to find that node in the document object and will apply the changes 
 7. The JavaScript is integrated to the render tree and after that the render tree proceeds to the layout phase

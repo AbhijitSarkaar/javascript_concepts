@@ -17,3 +17,4 @@ const foo1 = (a,b,a,b) => {
     console.log(a,b,a)
 }
 foo1(1,2,3,4)
+

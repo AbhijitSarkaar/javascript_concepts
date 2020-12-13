@@ -12,7 +12,8 @@
     3. bind() creates a copy of the function used
     4. apply() has a array as it's arguments. it serves same purpose as call()
     5. every function is an object, so a function has call, bind, apply built in methods
-    6. new keyword creates a new object
+	6. new keyword creates a new object
+	7. Need to know the arrow function and this connections
 */
 
 /* 

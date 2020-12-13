@@ -83,7 +83,7 @@ Hierarchy:
                                        ___|_____
                                       |         |
                                       |         |
-                                   Element    Document
+                                   Element    Document (The DOM Tree)
 
 EventTarget: It is the DOM class. Element, Document and Window class are the three most used classes which inherits from EventTarget
 

@@ -1,0 +1,86 @@
+--- To Do ---
+-------------
+
+Write code of a parent promise containing three promises. The parent resolves if at most one of the child promise fails, if more than one fails then the parent promise rejects. Fault tolerant systems ~ 2 hours
+Context ~ 30 min
+Immutability in javaScript. Asked how immutability is achieved on map function ~ 5 min
+Closures. Examples ~ 1 hour
+Higher order function ~ 5 min
+Hoisting (variables and function) ~ 10 min
+Function declaration vs definition ~ 5 min
+localStorage and sessionStorage ~ 15 min
+Sort a array without using Array.sort(). How to implement the sort function (polyfill) in different browsers where sort method itself not present. How to know whether that sort method is present or not without raising errors ~ 15 min
+Closure. Whether the next example is closure or not and what is the output
+var b = 1;
+function outer() {
+	var b = 2;
+	function inner() {
+		b++;
+		console.log(b);
+		var b = 3;
+		console.log(b);
+	}
+	inner();
+}
+outer();
+
+ Output of following code snippet
+let a = new Promise((res, rej) => res(1))
+	.then((x) => x + 1)
+	.then((x) => {
+		throw new Error('Error');
+	})
+	.catch(() => 1)
+	.then((x) => x + 1)
+	.then((x) => console.log(x))
+	.catch(() => console.error);
+
+Output of following code snippet
+
+console.log(1);
+setTimeout(() => console.log(2), 0);
+let a = new Promise((res, rej) => {
+	setTimeout(() => {
+		console.log(3);
+		res(3);
+	}, 3000);
+});
+console.log(4);
+
+Macro and micro tasks in event loop ~ 30 min
+How to deep copy a nested object using recursion ~ 30 min
+
+
+
+
+
+
+
+--- In progress ---
+-------------------
+
+
+map function’s parameters and it’s callback’s parameters
+how does "this" value inside callback function references to the thisArg parameter provided in the map function along with the callback function
+this keyword behaviour inside arrow functions
+
+Polyfills ~ 1 hour
+map
+reduce
+filter
+forEach
+call
+apply
+bind
+debounce
+throttle
+slice
+splice
+
+
+
+--- Completed ---
+-----------------
+
+The whole process of html getting rendered into the browser ~ 15 min (took ~ 3.5 hours)
+

@@ -21,10 +21,10 @@ js modules
 import const, default import
 classes
 functions and parameters (new, this, function as object, arguments object, first-class functions, higher order functions)
+currying
 
  (Current) --> 
 
-currying
 throttle and debounce
 sets and maps
 generators
