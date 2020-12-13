@@ -17,3 +17,11 @@
     A. It becomes a property of window object
 */
 
+//Exercises
+
+{
+	let a = (b = 1);
+	a = 2;
+	console.log(a);
+}
+console.log(b); //here b is declared without a keyword, it becomes a part of window object
