@@ -24,3 +24,4 @@ Observations
     5. Object.prototype is a object(collection of methods and properties e.g valueOf) which is passed down to different objects.
     6. prototype property always refers to an objecs
     7. every function has a prototype
+    8. For making the properties protected from outside use, declare using var/let/const to make the variables local and access using getter/setter
