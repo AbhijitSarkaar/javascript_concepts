@@ -2,7 +2,7 @@
 
 Concepts
 
-1. promise, some brief intro, promise object (resolve, reject)
+1. promise, some brief intro, promise object (resolve, reject) 
     https://javascript.info/promise-basics
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
@@ -15,8 +15,9 @@ Concepts
     https://javascript.info/promise-chaining
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
 
-    1. then() method takes up to two arguments: callback functions for the success and failure. each call back function takes corresponding
-    fullfilled value or the rejected value
+	1. then() method takes up to two arguments: callback functions for the success and failure. 
+	each call back function takes corresponding fullfilled value or the rejected value.
+	the reject callback is exactly the same as catch. If the reject callback is present then the catch block will not be executed
     2. then() returns a promise (resolved/rejected). 
     When a value is simply returned from within a then handler, it will effectively return Promise.resolve(<value returned by whichever handler was called>).
     3. promise chaining is achieved by returning promise from then() method. the subsequent then methods receive the promise value from previous then methods

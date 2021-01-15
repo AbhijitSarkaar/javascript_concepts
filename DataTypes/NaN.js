@@ -18,7 +18,9 @@ Resources
 console.log(typeof Infinity, typeof NaN)
 
 //NaN does not equate to itself
-console.log(NaN === NaN)
+console.log(NaN === NaN) //false
+
+console.log([1,2,3,NaN].indexOf(NaN)) // -1
 
 //isNaN() checks the parameter after converting to number will be NaN or not
 console.log(isNaN(123))

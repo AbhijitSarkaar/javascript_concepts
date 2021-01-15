@@ -1,0 +1,4 @@
+extends 
+static
+super
+setting a function as prototype of another function

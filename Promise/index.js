@@ -2,7 +2,7 @@
  * Observations
  * 
  * If the parent promise returns a pending promise, then returns a pending promise even if a resolved or rejected promise is returned
- * 
+ * The promise must be resolved/rejected before then method
  */
 
 

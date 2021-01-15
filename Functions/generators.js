@@ -11,5 +11,6 @@ function* foo() {
 }
 
 let f = foo();
+console.log(f);
 console.log(f.next());
 console.log(f.next());

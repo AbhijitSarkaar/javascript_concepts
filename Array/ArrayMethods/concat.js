@@ -5,7 +5,7 @@ let d = [[9], [9], 1, 2];
 let e = 5;
 
 console.log(a.concat(b));
-console.log(a.concat(b));
+console.log(a.concat(c));
 console.log(a.concat(d));
 console.log(a.concat(e));
 console.log(a);

@@ -95,3 +95,25 @@ const cleanTable = function () {
 
 cleanTable.call(dove);
 cleanTable.call(lux);
+
+//Arrow function and ES5 function
+
+let obj = {
+	foo: function () {
+		console.log(this);
+
+		//ES5 function, this refers to the global object
+		function foo1() {
+			console.log('foo1', this);
+		}
+		foo1();
+		//Arrow function, this automatically refers to the obj
+		foo2 = () => {
+			console.log('foo2', this);
+		};
+		foo2();
+	},
+	a: 1,
+};
+
+obj.foo();

@@ -59,7 +59,7 @@ try {
 //5
 //rest parameter of function: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 //it's a function's last parameter and is prefixed with an spread syntax ...
-//rest parameter can only be the last paramter
+//rest parameter can only be the last paramter. leading commans display syntax error
 //it's an Array instance containing all the REMAINING arguments passed to the function
 //rest parameters are introduced because earlier arguments object needed to be converted into normal array before iterating through the parameters
 
@@ -70,6 +70,8 @@ const foo = (a, b, ...rest) => {
 };
 
 foo('a', 'b', 'c', 'd', 'e');
+// let [a,...b,] = [1,2,3,4,4]; //Syntax error
+
 
 //6
 //arguments object is an array like structure, contains the value passed to the function
