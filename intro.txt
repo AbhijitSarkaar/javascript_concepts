@@ -32,5 +32,4 @@ garbage collections
 context api
 polyfills
 design patterns
-how to run js from editor to browser
 destructure https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
