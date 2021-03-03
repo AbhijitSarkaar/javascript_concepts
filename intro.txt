@@ -9,8 +9,6 @@ this (call, apply, bind)
 scope, hoisting, closure
 Objects(this, prototypes, methods, prototype Inheritance)
 IIFE
-js modules
-import const, default import
 promise
 event loop (events (event.preventDefault()), event bubbling, single thread, asynchronous, web apis, callback queue) 
 iterators
@@ -24,30 +22,30 @@ pure functions, side effects and state mutations
 
 in progress
 
-functions and parameters (new, this, function as object, arguments object, first-class functions, higher order functions)
-currying
-array - reduce, splice, slice
 polyfills
 
 to do
 
-classes
+functions and parameters (new, this, function as object, arguments object, first-class functions, higher order functions)
+currying
+
+class (super) and exercises
 
 call stack and heap 
 execution context (scope chain)
 
 document object model
+rendering pipeline
 Javascript versions (ECMAScript, javascript engine, Browser compatibility and transpilation)
 
-
-class (super) and exercises
+js modules
+import const, default import
 operators
 sets and maps
 garbage collections
 decorators
-context api
 design patterns
 proxy
 reflextion
 shadow dom
-destructure https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+destructure
