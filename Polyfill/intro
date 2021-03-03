@@ -3,19 +3,19 @@ Optimisation - done
 debounce
 throttle
 
-Browser API - 7:30
+Browser API - done
 
 setTimeout
-setInterval
+setInterval using setTimeout
 
-Function Methods - 8
+Function Methods
 
 bind
 call
 apply
 arrow functions
 
-Promise - 9:30
+Promise
 
 Promise class
 Promise all
@@ -23,7 +23,7 @@ async await
 fetch
 
 
-Array Methods -- 11
+Array Methods
 
 map
 reduce
@@ -33,7 +33,7 @@ splice
 filter
 flat
 
-Object Methods - 12
+Object Methods
 
 Object.create
 Object.seal
