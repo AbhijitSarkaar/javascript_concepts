@@ -13,5 +13,6 @@ Concepts
 
 //null and undefined have two different types
 
-console.log(typeof null) //object (It's a error of javascript)
-console.log(typeof undefined) //undefined
+console.log(typeof null); //object (It's a error of javascript)
+console.log(typeof undefined); //undefined
+console.log(null == undefined); //true. both are coerced to falsy value

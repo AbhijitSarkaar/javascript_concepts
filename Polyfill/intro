@@ -1,16 +1,40 @@
-Promise class
-Promise all
+Array Methods
+
 map
 reduce
-bind
-call
-apply
-debounce
-throttle
-fetch
-arrow functions
-Object.create
 forEach
 slice
 splice
 filter
+flat
+
+Function Methods
+
+bind
+call
+apply
+arrow functions
+
+Promise
+
+Promise class
+Promise all
+fetch
+
+Object Methods
+
+Object.create
+Object.seal
+Object.freeze
+Object.seize
+deep clone
+
+Optimisation - done
+
+debounce
+throttle
+
+Browser API
+
+setTimeout
+setInterval

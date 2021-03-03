@@ -56,31 +56,4 @@ How to deep copy a nested object using recursion ~ 30 min
 
 
 
---- In progress ---
--------------------
-
-
-map function’s parameters and it’s callback’s parameters
-how does "this" value inside callback function references to the thisArg parameter provided in the map function along with the callback function
-this keyword behaviour inside arrow functions
-
-Polyfills ~ 1 hour
-map
-reduce
-filter
-forEach
-call
-apply
-bind
-debounce
-throttle
-slice
-splice
-
-
-
---- Completed ---
------------------
-
-The whole process of html getting rendered into the browser ~ 15 min (took ~ 3.5 hours)
 

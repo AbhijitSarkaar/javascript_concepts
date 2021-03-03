@@ -1,0 +1,9 @@
+1. when functions are created, they are linked to a empty object.
+2. the prototype object of a function has it's prototype to Object 
+3. typeof function  === 'function' OR foo instanceof Function (instanceof Object also returns true here)
+4. length property returns the number of parameters passed to the function
+5. arguments => values passed to the function. works for normal function not arrow functions. it's a array like property
+6. function.toString() gives the source code of the function
+7. spread operator on parameters must be on the last parameter of function
+8. binding an already bound function does not change the context. 
+9. 

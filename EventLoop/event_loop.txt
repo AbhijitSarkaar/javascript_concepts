@@ -36,7 +36,7 @@ Concepts
     2. event delegation is a pattern where a set of elements are represented by a common ancestor
     3. e.stopPropagation() stops the event bubbling up the elements stack
     4. e.preventDefault() is about stopping a default behaviour of an event by the browser (e.g clicking on a checkbox, form submit refresh)
-    5. event propagation ihas three phases. capturing (top-down), target phase, bubbling (bottom-up),
+    5. event propagation has three phases. capturing (top-down), target phase, bubbling (bottom-up),
     first the event happens on the top level elements all the way to the innermost element, after that the event handler is executed on the target, later the bubbling happens
     6. event bubbling is the default way javascript event propagation happen. for capturing, need to change the boolean flag in addEventListener,
     main thing to note here is events are not listened two times for both capture and bubbling. They are either listened to in capturing mode (by setting boolean flag),
@@ -63,7 +63,7 @@ Concepts
     If the call stack is empty then the event loop picks up the functions from callback queue and sends them to the call stack
     2. the web apis are the intermediate state (thread) between call stack and callback queue where the events wait untill completion. 
     3. callback functions are inserted into callback queue after the event is completed
-    4. job queue is a queue used for new Promise() and has higher priority than other callbacks
+    4. job/microtask queue is a queue used for new Promise() and has higher priority than other callbacks
     5. browser js runtime environment contains web apis, event loop, job and callback queue
     6. Browser Web APIs- threads created by browser implemented in C++ to handle async events like DOM events, http request, setTimeout, etc
     7. In case of DOM events, the event listener sits in the web APIs environment waiting for a certain event (click event in this case) to happen, 

@@ -15,13 +15,20 @@ Resources
 */
 
 //The typeof infinity and typeof NaN is number
-console.log(typeof Infinity, typeof NaN)
+console.log(typeof Infinity, typeof NaN);
 
 //NaN does not equate to itself
-console.log(NaN === NaN) //false
+console.log(NaN === NaN); //false
 
-console.log([1,2,3,NaN].indexOf(NaN)) // -1
+console.log([1, 2, 3, NaN].indexOf(NaN)); // -1
 
-//isNaN() checks the parameter after converting to number will be NaN or not
-console.log(isNaN(123))
-console.log(isNaN("opop"))
+//NaN with any operation results in NaN
+console.log(1 + NaN); // NaN
+
+//isNaN() first convert the parameter to number and after converting to number it checks whether it will be NaN or not
+console.log(isNaN(123)); //false
+console.log(isNaN('opop')); //true
+
+//Number.isNan() on the other hand do not coerce the value to Number
+console.log(isNaN(123)); //false
+console.log(isNaN('opop')); //false

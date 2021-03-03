@@ -107,7 +107,7 @@ let obj = {
 			console.log('foo1', this);
 		}
 		foo1();
-		//Arrow function, this automatically refers to the obj
+		//Arrow function, this automatically refers to the obj because of lexical this
 		foo2 = () => {
 			console.log('foo2', this);
 		};

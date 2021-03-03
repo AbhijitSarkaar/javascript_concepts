@@ -1,35 +1,53 @@
 Concepts
 
-document object model
-Javascript versions (ECMAScript, javascript engine, Browser compatibility and transpilation)
+done
+
 loosely typed (Can assign any type of value to a variable. the types are not enforced by using data types)
 types of data (primitive, non primitive)
-operators
 let, var, const (use strict)
-call stack and heap 
-event loop (events (event.preventDefault()), event bubbling, single thread, asynchronous, web apis, callback queue) 
-promise (async-await, try catch)
 this (call, apply, bind)
-execution context (scope chain)
 scope, hoisting, closure
 Objects(this, prototypes, methods, prototype Inheritance)
-pure functions, side effects and state mutations
 IIFE
-array - reduce, splice, slice
-anonymous functions
 js modules
 import const, default import
-classes
+promise
+event loop (events (event.preventDefault()), event bubbling, single thread, asynchronous, web apis, callback queue) 
+iterators
+generators
+async await
+try catch
+throttle and debounce
+anonymous functions
+pure functions, side effects and state mutations
+
+
+in progress
+
 functions and parameters (new, this, function as object, arguments object, first-class functions, higher order functions)
 currying
-
- (Current) --> 
-
-throttle and debounce
-sets and maps
-generators
-garbage collections
-context api
+array - reduce, splice, slice
 polyfills
+
+to do
+
+classes
+
+call stack and heap 
+execution context (scope chain)
+
+document object model
+Javascript versions (ECMAScript, javascript engine, Browser compatibility and transpilation)
+
+
+class (super) and exercises
+operators
+sets and maps
+garbage collections
+decorators
+context api
 design patterns
+proxy
+reflextion
+shadow dom
 destructure https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
