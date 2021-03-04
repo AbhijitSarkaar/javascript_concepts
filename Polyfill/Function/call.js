@@ -30,7 +30,16 @@ var bat = display.call(batman, 'is Awesome');
 var sup = function (str) {
 	return this.firstName + this.lastName + ' ' + str;
 }.call(superman, 'is Awesome');
-console.log(bat);
-console.log(sup);
+// console.log(bat);
+// console.log(sup);
 
 //Polyfill
+
+Function.prototype.myCall = function (context, ...args) {
+	var newContext = Object.create(context); //it's used to not add a method to calling object
+	newContext.method = this;
+	return newContext.method(...args);
+};
+
+console.log(display.myCall(batman, 'is awesome'));
+console.log(batman);
