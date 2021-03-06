@@ -8,12 +8,11 @@ Browser API - done
 setTimeout
 setInterval using setTimeout
 
-Function Methods
+Function Methods - done
 
 bind
 call
 apply
-arrow functions
 
 Promise
 
@@ -40,3 +39,8 @@ Object.seal
 Object.freeze
 Object.seize
 deep copy
+
+
+Other important polyfills
+
+arrow functions
