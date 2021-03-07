@@ -22,8 +22,10 @@ Concepts
     When a value is simply returned from within a then handler, it will effectively return Promise.resolve(<value returned by whichever handler was called>).
     3. promise chaining is achieved by returning promise from then() method. the subsequent then methods receive the promise value from previous then methods
     the subsequent then() methods wait for the promise to get resolved or rejected
-    4. catch is used for catching the rejected promise. catch returns a promise which can be chained
-    5. finally is called when the promise is settled (resolved or rejected)
+	4. catch is used for catching the rejected promise. catch returns a promise which can be chained. the return promise 
+	behaves same as then method
+	5. finally is called when the promise is settled (resolved or rejected). finally retuns a promise.
+	finally does not receive any argument into it's callback function
     6. then() returns rejected promise in two cases, if it throws an error, or if it returns Promise.reject()
     if then returns a rejected promise, the subsequent then method's second (reject) callback function will be called
     7. then takes two callback functions fulfillled and unFulfillled. any one is called based on previous returned promise's state
@@ -89,6 +91,9 @@ Promise.resolve('Foo')
 		console.log('3' + value);
 	});
 console.log('Second');
+
+//The main concept here is that the promise chain waits for the promise to complete before return in the fist then, but in case
+of setTimeout it immediately returns the value
 
 */
 
