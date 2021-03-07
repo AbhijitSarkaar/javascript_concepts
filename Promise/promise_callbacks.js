@@ -25,10 +25,13 @@ Concepts
 	4. catch is used for catching the rejected promise. catch returns a promise which can be chained. the return promise 
 	behaves same as then method
 	5. finally is called when the promise is settled (resolved or rejected). finally retuns a promise.
-	finally does not receive any argument into it's callback function
+	finally does not receive any argument into it's callback function. 
+	finally returns a promise which can be chained just like then and catch
     6. then() returns rejected promise in two cases, if it throws an error, or if it returns Promise.reject()
     if then returns a rejected promise, the subsequent then method's second (reject) callback function will be called
-    7. then takes two callback functions fulfillled and unFulfillled. any one is called based on previous returned promise's state
+	7. then takes two callback functions fulfillled and unFulfillled. any one is called based on previous returned promise's state
+	8. the intermediate promise object is interconnected with the result of the promise, so whenever a given promise settles, it's intermediate state object
+	gets updated with the resultant value even if it's not in current scope
 
 3. promise apis
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise

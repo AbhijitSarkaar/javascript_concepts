@@ -1,0 +1,6 @@
+https://codeburst.io/javascript-interview-questions-promises-1ab2fb7f0467
+
+1. await can be used with any object with a then method
+2. finally does not receive a argument. it can return a promise which can be chained.
+if finally does not return a promise, the subsequent then and catch blocks accepts the values from 
+then,catch block previous to the finally block
