@@ -182,6 +182,7 @@ console.log('outside abc');
 async function abc() {
 	console.log('inside abc 1');
 	await Promise.reject('Response');
+	await Promise.resolve('Response'); // Does not get executed as function execution stops when promise is rejected
 	console.log('inside abc 2');
 }
 
@@ -193,3 +194,68 @@ console.log('outside abc');
 // "inside abc 1"
 // "outside abc"
 // "Catch handling Error", "Response"
+
+//Multiple promises
+
+//Example 1
+
+let promises = [
+	new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve('Promise 1 resolved');
+		}, 1000);
+	}),
+	new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve('Promise 2 resolved');
+		}, 2000);
+	}),
+];
+
+async function abc() {
+	let promise = await Promise.all(promises);
+	console.log('Inside abc 2');
+	return promise;
+}
+
+abc()
+	.then((res) => console.log('Success callback', res))
+	.catch((err) => console.log('Error calback', err));
+
+//Output
+// "Inside abc 2"
+// "Success callback", ["Promise 1 resolved", "Promise 2 resolved"]"
+
+//Example 2
+//error handling in multiple promises
+
+let promises = [
+	new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve('Promise 1 resolved');
+		}, 1000);
+	}),
+	new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve('Promise 2 resolved');
+		}, 2000);
+	}),
+	new Promise((resolve, reject) => {
+		setTimeout(() => {
+			reject('Promise 3 rejected');
+		}, 2000);
+	}),
+];
+
+async function abc() {
+	let promise = await Promise.all(promises);
+	console.log('Inside abc 2');
+	return promise;
+}
+
+abc()
+	.then((res) => console.log('Success callback', res))
+	.catch((err) => console.log('Error callback', err));
+
+//Output
+//"Error callback", "Promise 3 rejected"
