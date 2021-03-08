@@ -19,7 +19,8 @@ Concepts
 	each call back function takes corresponding fullfilled value or the rejected value.
 	the reject callback is exactly the same as catch. If the reject callback is present then the catch block will not be executed
     2. then() returns a promise (resolved/rejected). 
-    When a value is simply returned from within a then handler, it will effectively return Promise.resolve(<value returned by whichever handler was called>).
+	When a value is simply returned from within a then handler, it will effectively return Promise.resolve(<value returned by whichever handler was called>).
+	if then returns a rejected promise, it is handled in next then's error callback or catch handler
     3. promise chaining is achieved by returning promise from then() method. the subsequent then methods receive the promise value from previous then methods
     the subsequent then() methods wait for the promise to get resolved or rejected
 	4. catch is used for catching the rejected promise. catch returns a promise which can be chained. the return promise 
@@ -32,6 +33,7 @@ Concepts
 	7. then takes two callback functions fulfillled and unFulfillled. any one is called based on previous returned promise's state
 	8. the intermediate promise object is interconnected with the result of the promise, so whenever a given promise settles, it's intermediate state object
 	gets updated with the resultant value even if it's not in current scope
+	9. resolve and reject callback function returns a new promise
 
 3. promise apis
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
