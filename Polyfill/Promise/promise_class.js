@@ -10,6 +10,7 @@
  *
  */
 //https://dev.to/vijayprwyd/polyfill-for-promises-1f0e
+//https://iamabhilash.medium.com/javascript-promise-method-polyfills-a4a41623df1a
 
 function PromisePolyfill(executor) {
 	//resolve a promise
