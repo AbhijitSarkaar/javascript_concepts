@@ -1,0 +1,5 @@
+https://nodejs.org/en/knowledge/getting-started/what-is-require/
+
+1. require reads a javascript file, executes it and returns the exports object
+2. if the filename passed to require is actually a directory, it will first look for package.json in the directory 
+and load the file referenced in the main property
