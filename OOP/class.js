@@ -1,6 +1,7 @@
 /**
  * In order to hide the class properties, they can be declared inside the constructor using the var keyword
  * so that they’re only accessible through getters/setters, which can also be defined inside the constructor
+ * classes are not hoisted. objects can be initialised using classes only after they are defined
  */
 
 //class syntax
